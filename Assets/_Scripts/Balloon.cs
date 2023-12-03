@@ -21,6 +21,7 @@ public class Balloon : MonoBehaviour
         if (c2d.gameObject.CompareTag("Player"))
         {
             //Destroy balloon and increment score
+            Camera.main.GetComponent<LevelController>().ballonPickUp(gameObject);
             Destroy(gameObject);
             ScoreCounter.instance.IncreaseCoins(value);
         }

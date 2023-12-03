@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
     //testing
     //public GameObject[] hearts;
-    public int playerHealth;
+    public int playerHealth = 3;
+    public string currentScene;
 
     [SerializeField] private Image[] hearts;
 
@@ -27,8 +29,7 @@ public class HealthController : MonoBehaviour
     {
         if (playerHealth <= 0)
         {
-            //Restart the game
-            //Respawn the player?
+            SceneManager.LoadScene(currentScene);
         }
         for (int i = 0; i < hearts.Length; i++)
         {

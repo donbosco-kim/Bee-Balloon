@@ -5,21 +5,25 @@ using UnityEngine;
 public class DamageController : MonoBehaviour
 {
     //testing 
-    [SerializeField] private int starDamage;
+    [SerializeField] private int Damage;
 
     [SerializeField] private HealthController healthController;
+
+    [SerializeField] private GameObject spawnPoint;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            Damage();
+            DamagePlayer();
+            Destroy(collision.gameObject);
+            spawnPoint.SetActive(true);
         }
     }
-    void Damage()
+    void DamagePlayer()
     {
-        healthController.playerHealth = healthController.playerHealth - starDamage;
+        healthController.playerHealth = healthController.playerHealth - Damage;
         healthController.UpdateHealth();
-        gameObject.SetActive(false);
+
     }
 }
