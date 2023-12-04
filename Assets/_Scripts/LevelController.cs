@@ -28,6 +28,8 @@ public class LevelController : MonoBehaviour
     {
         if(Ballons.Count <= 0)
         {
+            //Save the score before loading the next level
+            ScoreCounter.instance.OnDisable();
             SceneManager.LoadScene(nextLevel);
         }
     }
@@ -36,7 +38,4 @@ public class LevelController : MonoBehaviour
     {
         Ballons.Remove(GO);
     }
-
-
-
 }

@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 3
+  currentScene: Level1
   hearts:
   - {fileID: 766734648}
   - {fileID: 1135199700}
