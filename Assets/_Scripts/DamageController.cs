@@ -7,9 +7,21 @@ public class DamageController : MonoBehaviour
     //testing 
     [SerializeField] private int Damage;
 
-    [SerializeField] private HealthController healthController;
+    private GameObject spawnPoint;
+    private HealthController healthController;
 
-    [SerializeField] private GameObject spawnPoint;
+    
+
+
+
+    private void Awake()
+    {
+        healthController = Camera.main.GetComponent<HealthController>();
+        spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
+
+
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

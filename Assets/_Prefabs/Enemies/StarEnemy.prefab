@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6077246215979417601}
   - component: {fileID: 6443619288347660910}
   - component: {fileID: 4350443977432605821}
-  - component: {fileID: 5323517687223387729}
   - component: {fileID: 6765776880679494068}
+  - component: {fileID: 5323517687223387729}
+  - component: {fileID: -873988685108877303}
   m_Layer: 0
   m_Name: StarEnemy
   m_TagString: Untagged
@@ -76,12 +77,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f33eb1ae45835ea43aad0f4b71b8185f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a13837290c7afb34e84a134e8db4936b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6, y: 6}
+  m_Size: {x: 5, y: 5.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -114,21 +115,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5323517687223387729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678238677858440556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66b32b678c270f64ebd6dcd78e4ef7e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 1
-  healthController: {fileID: 0}
-  spawnPoint: {fileID: 0}
 --- !u!60 &6765776880679494068
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -165,8 +151,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 6}
-    newSize: {x: 6, y: 6}
+    oldSize: {x: 5, y: 5.26}
+    newSize: {x: 5, y: 5.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -263,3 +249,30 @@ PolygonCollider2D:
       - {x: -1.38, y: -2.6299999}
       - {x: -1.35, y: -2.61}
   m_UseDelaunayMesh: 0
+--- !u!114 &5323517687223387729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678238677858440556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b32b678c270f64ebd6dcd78e4ef7e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
+--- !u!114 &-873988685108877303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678238677858440556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c0bee3d0ba9694c8a76b860a95d196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  direction: 1

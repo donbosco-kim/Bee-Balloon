@@ -24,5 +24,7 @@ public class LevelMenu : MonoBehaviour
     {
         string levelName = "Level" + levelId;
         SceneManager.LoadScene(levelName);
+        Vector3 interpolatedPosition = Vector3.Lerp(Vector3.up, Vector3.forward, 0.1f);
+        Debug.Log(interpolatedPosition);
     }
 }
