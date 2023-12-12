@@ -9,6 +9,7 @@ public class TimerGameOver : MonoBehaviour
     int countDownValue;
     public TMP_Text timerText;
     bool isTimerRunning;
+    bool invoked = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +29,14 @@ public class TimerGameOver : MonoBehaviour
         if (PlayerPrefs.HasKey(RemainingTimeKey))
         {
             countDownValue = PlayerPrefs.GetInt(RemainingTimeKey);
+            
         }
-        InvokeRepeating("CountDownTimer", 0.0f, 1.0f);
+        if(!invoked)
+        {
+            InvokeRepeating("CountDownTimer", 0.0f, 1.0f);
+            invoked = true;
+        }
+        
     }
 
     void CountDownTimer()
