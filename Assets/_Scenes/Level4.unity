@@ -698,7 +698,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 412792434}
-  - {fileID: 1810785975}
+  - {fileID: 933849018}
   - {fileID: 3185378317258339249}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &633616166 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4411395424464387567, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5007638698803809549, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
   m_PrefabInstance: {fileID: 633616164}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1951,6 +1951,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11e10309e29793d47be7db2f391f4587, type: 3}
+--- !u!4 &933849018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3434782361399355280, guid: 11e10309e29793d47be7db2f391f4587, type: 3}
+  m_PrefabInstance: {fileID: 933849017}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &948351709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2518,11 +2523,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7346262989351167584, guid: 7d851517fb3950742a073319ddbfa53d, type: 3}
   m_PrefabInstance: {fileID: 340796435}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1810785975 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6077246215979417601, guid: 11e10309e29793d47be7db2f391f4587, type: 3}
-  m_PrefabInstance: {fileID: 933849017}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1958773941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,7 +2749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1976302949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1039574bca330418b053caa4322fc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d2d4cbafc2cce443825ab141a7002be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 633616166}

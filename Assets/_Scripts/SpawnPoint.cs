@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class SpawnPoint: MonoBehaviour
+public class SpawnPoint : MonoBehaviour
 {
 
     [SerializeField] private GameObject PlayerPrefab;
-    [SerializeField] private Timer timer;
+    [SerializeField] private TimerGameOver timer;
 
     public void OnStartClick()
     {
-       GameObject GO = GameObject.Instantiate(PlayerPrefab);
+        GameObject GO = GameObject.Instantiate(PlayerPrefab);
         GO.transform.position = transform.position;
         gameObject.SetActive(false);
         //Start the timer when the button is clicked

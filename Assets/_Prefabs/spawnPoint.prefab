@@ -360,3 +360,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 5593720114538628279, guid: 6c6e503ea3479bd448df24ea445fd2b8, type: 3}
+  timer: {fileID: 0}

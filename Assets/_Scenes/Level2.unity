@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &87001851 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4411395424464387567, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5007638698803809549, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
   m_PrefabInstance: {fileID: 87001849}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -517,6 +517,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7346262989351167584, guid: a31ab54ff4d9d3145beeadcd3af23280, type: 3}
   m_PrefabInstance: {fileID: 1393202521}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &185771235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 822804420814705603, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+  m_PrefabInstance: {fileID: 482658834}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd35c0c9d2072949aff77163b3a33ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &185907539 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6836500135216249367, guid: 91d9bef3031d6e2478693ec17c6645b2, type: 3}
@@ -1632,13 +1643,25 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1976302956}
-    - target: {fileID: 6265527992991311765, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
+    - target: {fileID: 2433127786335862679, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6265527992991311765, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
+    - target: {fileID: 2433127786335862679, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 185771235}
+    - target: {fileID: 2433127786335862679, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnStartClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433127786335862679, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpawnPoint, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433127786335862679, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8484655265313909760, guid: 3b0640e3978c62f4eaf90aa5d53129cb, type: 3}
       propertyPath: m_Name
@@ -6949,7 +6972,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1976302949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1039574bca330418b053caa4322fc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d2d4cbafc2cce443825ab141a7002be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 87001851}

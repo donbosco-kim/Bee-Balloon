@@ -3182,6 +3182,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6704663009104541436, guid: 11e10309e29793d47be7db2f391f4587, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6765776880679494068, guid: 11e10309e29793d47be7db2f391f4587, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6082,7 +6086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!114 &1506215668 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4411395424464387567, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5007638698803809549, guid: dc4870824e61b7b46bbc7bc8b7397561, type: 3}
   m_PrefabInstance: {fileID: 1506215666}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -7601,7 +7605,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1976302949}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1039574bca330418b053caa4322fc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d2d4cbafc2cce443825ab141a7002be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1506215668}
