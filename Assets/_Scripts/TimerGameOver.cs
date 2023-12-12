@@ -51,7 +51,7 @@ public class TimerGameOver : MonoBehaviour
             else
             {
                 isTimerRunning = false; // Stop the timer when it reaches 0
-                SceneManager.LoadScene("GameOverScene"); // Load game over scene or handle losing logic
+                SceneManager.LoadScene("GameEnd"); // Load game over scene or handle losing logic
                 CancelInvoke("CountDownTimer"); // Stop invoking the method when countdown is complete
                 // Clear the stored remaining time when the countdown is complete
                 PlayerPrefs.DeleteKey(RemainingTimeKey);
