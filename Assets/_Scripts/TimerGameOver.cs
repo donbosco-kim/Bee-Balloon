@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 public class TimerGameOver : MonoBehaviour
 {
     private const string RemainingTimeKey = "RemainingTime";
-    int countDownValue = 240;
+    int initialCountDownValue = 240;
+    int countDownValue;
     public TMP_Text timerText;
     bool isTimerRunning;
 
@@ -50,8 +51,7 @@ public class TimerGameOver : MonoBehaviour
             else
             {
                 isTimerRunning = false; // Stop the timer when it reaches 0
-                // GameOver();
-                // SceneManager.LoadScene("GameOverScene"); // Load game over scene or handle losing logic
+                SceneManager.LoadScene("GameOverScene"); // Load game over scene or handle losing logic
                 CancelInvoke("CountDownTimer"); // Stop invoking the method when countdown is complete
                 // Clear the stored remaining time when the countdown is complete
                 PlayerPrefs.DeleteKey(RemainingTimeKey);
@@ -65,7 +65,11 @@ public class TimerGameOver : MonoBehaviour
     }
     public void ResetTime()
     {
-        //countDownValue = 240;
+        
+        countDownValue = initialCountDownValue;
+        PlayerPrefs.SetInt(RemainingTimeKey, countDownValue);
+        PlayerPrefs.Save();
+        //StartTimer();
     }
 
     // Update is called once per frame

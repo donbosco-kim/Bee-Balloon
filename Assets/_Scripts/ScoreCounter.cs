@@ -12,6 +12,7 @@ public class ScoreCounter : MonoBehaviour
     public TMP_Text scoreText;
     public int currentScores = 0;
 
+
     void Awake()
     {
         instance = this; 
